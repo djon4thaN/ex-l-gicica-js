@@ -1,0 +1,21 @@
+<script>
+  /*
+Crie uma função que recebe por parâmetro um valor inteiro e
+positivo e retorne verdadeiro se o número for primo ou falso se não
+for.
+*/
+
+let num = Number.parseInt(prompt('digite o número: '))
+function isPrime(){
+    for(let i = 2; i <num; i++)
+if(num % i === 0) {
+    return false
+};
+return num > 1;
+}
+
+document.write(isPrime(num) ? 'é primo': 'não é primo')
+
+
+
+</script>

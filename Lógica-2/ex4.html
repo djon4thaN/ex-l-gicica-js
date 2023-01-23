@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 4</title>
+  </head>
+  <body>
+    <script>
+      /**
+ * Uma revendedora de carros usados paga a seus funcionários
+vendedores um salário fixo por mês, mais uma comissão também
+fixa para cada carro vendido e mais 5% do valor das vendas por ele
+efetuadas. Escrever um algoritmo que leia o número de carros por
+ele vendidos, o valor total de suas vendas, o salário fixo e o valor que
+
+ele recebe por carro vendido. Calcule e escreva o salário final do
+vendedor.
+ */
+
+      let salarioFixo,
+        carrosVendidos,
+        valorTotalVendas,
+        valorPorCarro,
+        salarioFinal;
+
+      salarioFixo = parseInt(prompt("Digite o salário fixo: "));
+
+      carrosVendidos = parseInt(
+        prompt("Digite a quantidade de carros vendidos: ")
+      );
+
+      valorTotalVendas = parseInt(prompt("Digite o valor total das vendas: "));
+
+      valorPorCarro = parseInt(
+        prompt("Digite o valor ganho por carro vendido: ")
+      );
+
+      salarioFinal =
+        salarioFixo +
+        carrosVendidos * valorPorCarro +
+        (5 * valorTotalVendas) / 100;
+
+      alert("O salário final é de: " + salarioFinal);
+    </script>
+  </body>
+</html>

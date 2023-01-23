@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 2</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+Desenvolva um algoritmo para ler o número total de eleitores de um
+município, o número de votos brancos, nulos e válidos. Calcular e
+escrever o percentual que cada um representa em relação ao total
+de eleitores.
+*/
+
+let totalEleitores = prompt('Digite o total de eleitores aqui');
+let votosBrancos = prompt('Digite o total de votos brancos aqui');
+let votosNulos = prompt('Digite o total de votos nulos aqui');
+
+let percentualBrancos = (votosBrancos * 100)/totalEleitores;
+let percentualNulos = (votosNulos * 100)/totalEleitores;
+let votosValidos = 100 - (percentualBrancos + percentualNulos);
+
+alert('o percentual de votos em branco é '+ percentualBrancos+'%');
+alert('o percentual de votos nulos é '+ percentualNulos+'%');
+alert('o total de votos é '+ totalEleitores);
+alert('o percentual de votos valido é '+ votosValidos+'%');
+</script>
+</html>

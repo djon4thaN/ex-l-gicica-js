@@ -1,0 +1,20 @@
+<script>
+/*
+Faça um algoritmo que pergunte a distância que um passageiro
+deseja percorrer em Km. Calcule o preço da passagem, cobrando
+R$0.50 por Km para viagens até 200Km e R$0.45 para viagens mais
+longas.
+*/
+
+let distancia = parseFloat(prompt('Qual distancia o passageiro ira percorrer por km?'));
+let valorCorrida;
+
+if(distancia <= 200){
+   valorCorrida = distancia * 0.50;
+}else{
+    valorCorrida = distancia * 0.45;
+}
+
+document.write('Valor da corrida é ' + valorCorrida.toFixed(2));
+
+</script>

@@ -1,0 +1,31 @@
+<script>
+  /*
+      Desenvolva um aplicativo que leia o salário e o sexo de vários
+  funcionários. No final, mostre o total de salários pagos aos homens e
+  o total pago às mulheres. O programa vai perguntar ao usuário se
+  ele quer continuar ou não sempre que ler os dados de um
+  funcionário.
+      */
+
+  let salario_homens = 0;
+  let salario_mulheres = 0;
+
+  let resposta = "s";
+  while (resposta === "s") {
+    let sexo = prompt("Digite o sexo [M/F]: ");
+    sexo.toLowerCase();
+    if (sexo == "m") {
+      salario = parseFloat(prompt("Digite o salário: R$ "));
+      salario_homens = salario + salario_homens;
+    } else if (sexo == "f") {
+      salario = parseFloat(prompt("Digite o salário: R$ "));
+      salario_mulheres = salario + salario_mulheres;
+    } else {
+      document.write("Opção Inválida </br>");
+    }
+  
+  resposta = prompt("Deseja continuar [S/N]? ").toLowerCase();
+  }
+  document.write("Total Salário Homens: R$ " + salario_homens.toFixed(2));
+  document.write("</br> Total Salário Mulheres: R$ " + salario_mulheres.toFixed(2));
+</script>

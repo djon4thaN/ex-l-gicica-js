@@ -1,0 +1,26 @@
+<script>
+/*
+Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar
+descontos para todos, mas especialmente para mulheres. Faça um
+programa que leia nome, sexo e o valor das compras do cliente e
+calcule o preço com desconto. Sabendo que:
+a. Homens ganham 5% de desconto
+
+b. Mulheres ganham 13% de desconto
+*/
+
+let nome = prompt('Digite seu nome');
+let sexo = prompt('PROMOÇÃO DIA DA MULHER!!! \n Digite o cupom Homem para ganhar 5% de desconto \n Digite o cupom Mulher para ganhar 13% de desconto');
+let valCompras = parseFloat(prompt('Digite a quantia gasta'));
+
+if(sexo === 'Homem'){
+    let desconto = valCompras/100 * 5;
+    document.write('Parabens ' + nome + ' o valor do seu desconto será de R$ ' + desconto);
+    document.write('</br> Valor total da compra R$ ' + (valCompras+desconto));
+}else if(sexo === 'Mulher'){
+    let desconto = valCompras/100 * 13;
+    document.write('Parabens ' + nome + ' o valor do seu desconto será de R$ ' + desconto);
+    document.write('</br> Valor total da compra R$ ' + (valCompras+desconto));
+}
+
+</script>

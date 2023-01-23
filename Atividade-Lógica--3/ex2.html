@@ -1,0 +1,30 @@
+<script>
+    /*
+    Escreva um algoritmo que solicite 2 números e uma operação
+matemática. O algoritmo deve realizar o cálculo com os 2 números
+digitados conforme a operação informada.
+    */
+
+   let num1 = parseInt(prompt('Digite o primeiro numero'));
+   let num2 = parseInt(prompt('Digite o segundo numero'));
+
+   
+let operacao = prompt('Digite a operação desejada: \n 1 - soma \n 2-subtracao \n 3-multiplicacao \n 4-divisao');  
+
+
+
+
+if(operacao == '1'){
+    document.write('RESULTADO ', num1 + num2);
+}else if(operacao == '2'){
+    document.write('RESULTADO ', num1 - num2);
+}else if(operacao == '3'){
+    document.write('RESULTADO ', num1 * num2);
+}else if(operacao == '4'){
+    document.write('RESULTADO ', num1 / num2);
+}else{
+    alert('opcao invalida');
+}
+   
+
+</script>
